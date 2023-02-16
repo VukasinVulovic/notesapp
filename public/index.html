@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 48
+        }
+    </style>        
+    <link rel="stylesheet" href="./src/styles/header.css">
+    <link rel="stylesheet" href="./src/styles/dialogs.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <script defer src="main.js" type="text/javascript"></script>
+    <title>Unknowns's notes</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="title" id="user_title">Unknowns's notes</h1>
+            <a>
+                <div class="account_box">
+                    <span class="icon" id="username_letter">?</span>
+                    <small class="username" id="username_text">Not logged in</small>
+                    <div class="dropdown">
+                        <ul>
+                            <li><button class="item" id="log_out_btn">Log out</button></li>
+                            <li><button class="item" id="log_out_all_btn">Log out of all devices</button></li>
+                            <li><button class="item" id="change_pass_btn">Change password</button></li>
+                            <li><button class="item" id="delete_acc_btn">Delete account</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="notes_container" id="notes_container"></section>
+
+        <div class="rubbish_bin" id="rubbish_bin">
+            <span class="material-symbols-outlined">delete</span>
+        </div>
+
+        <button class="add_note" id="add_note">
+            <span class="material-symbols-outlined">note_add</span>
+        </button>
+    </main>
+</body>
+</html>

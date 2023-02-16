@@ -1,0 +1,96 @@
+header {
+    width: 99%;
+}
+
+nav {
+    padding: 0.5em;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    z-index: 2;
+    background-color: hsl(0, 0%, 8%);
+    border-bottom: 1px solid black;
+}
+
+nav .title {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+}
+
+nav .account_box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+nav .account_box .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+    background-color: red;
+    width: 2em;
+    height: 2em;
+    font-size: 1em;
+    border-radius: 50%;
+    transition: 0.2s;
+    text-shadow: 0 0 3px black;
+}
+
+nav .account_box:hover .icon {
+    border-radius: 10%;
+}
+
+nav .account_box .username {
+    flex-basis: 100%;
+    text-align: center;
+    margin: auto;
+    font-size: 0.7em;
+}
+
+nav .account_box .dropdown {
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: hsl(0, 0%, 10%);
+    left: -70%;
+    width: 13.5ch;
+    transform: translate(-50%, 0);
+    border-radius: 2px;
+    overflow: hidden;
+    display: none;
+    transition: 0.2s;
+}
+
+nav .account_box .dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav .account_box .dropdown .item {
+    background: none;
+    color: white;
+    width: 100%;
+    text-align: left;
+    padding: 0.3em;
+    border-top: none;
+    display: flex;
+    border: 1px solid hsl(0, 0%, 40%);
+    font-size: 0.8em;
+    transition: 0.2s;
+}
+
+nav .account_box .dropdown .item:hover {
+    font-size: 1.2em;
+}
+
+nav .account_box:hover .dropdown {
+    display: flex;
+}

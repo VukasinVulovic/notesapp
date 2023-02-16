@@ -1,0 +1,124 @@
+html, body {
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 12%);
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+    margin-top: 4em;
+    width: 100%;
+}
+
+main .notes_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+    width: 100%;
+}
+
+main .notes_container .note {
+    font-family: 'Patrick Hand', cursive;
+    color: black;
+    background-color: hsl(35, 100%, 50%);
+    padding: 0.5em;
+    height: 15em;
+    width: 15em;
+    margin: 2em;
+    box-shadow: 0 3px 4px rgb(0, 0, 0);
+    overflow: hidden;
+    transform-style: preserve-3d;
+    transition: 0.2s;
+    word-break: break-all;
+}
+
+main .notes_container .note .unsaved_icon {
+    position: absolute;
+    right: 0.2em;
+    top: 0.2em;
+}
+
+main .notes_container .note .title {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.7em;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    height: auto;
+    overflow: hidden;
+    resize: none;
+    padding-bottom: 0;
+    display: flex;
+}
+
+main .notes_container .note .text {
+    margin: 0;
+    padding: 0;
+    /* text-align: justify; */
+    font-size: 1.2em;
+    background: none;
+    display: flex;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    height: 100%;
+    padding-top: 0;
+    overflow: hidden;
+    resize: none;
+    margin-left: 0.25em;
+}
+
+main .rubbish_bin {
+    font-size: 5em;
+    transition: 0.2s;
+    position: absolute;
+    left: 0.2em;
+    top: 1em;
+    /* background-color: red; */
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+main .rubbish_bin span {
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+}
+
+main .add_note {
+    font-size: 5em;
+    transition: 0.2s;
+    position: absolute;
+    right: 0.2em;
+    top: 1em;
+    /* background-color: red; */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background: none;
+    border-radius: 50%;
+    border: none;
+    color: white;
+}
+
+main .add_note:hover {
+    filter: invert(1);    
+}
+
+main .add_note span {
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+}
